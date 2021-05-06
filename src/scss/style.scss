@@ -1,0 +1,61 @@
+$main_color: #ff0066;
+$white: #ffffff;
+$second_color: #771133;
+
+.nav {
+    border: 1px solid $main_color;
+    display: flex;
+    flex-direction: row;
+
+    .link {
+        color: $main_color;
+
+        &:hover {
+            background-color: $main_color;
+            color: #ffffff;
+        }
+    }
+}
+
+
+.title {
+    @media (max-width: 320px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 480px) and (max-width: 800px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 800px) and (max-width: 1280px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 32px;
+    }
+}
+
+.footer {
+    background-color: $second_color;
+    color: $white;
+
+    .link2 {
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .title2 {
+        font-size: 1em;
+    }
+
+    .copy {
+        font-size: 0.75em;
+    }
+}
